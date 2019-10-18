@@ -56,6 +56,12 @@
    background-color: rgba(155, 89, 182,0);
  }
 
+
+  .login__contenido-2{
+    height: auto;
+  }
+
+
  .login__inicio{
    display: flex;
    flex-direction: column;
@@ -83,6 +89,11 @@
    background-color: rgba(0, 105, 225,1);
  }
 
+ .login__registro{
+   width: 30vw;
+   height: 440vh;
+ }
+
  .login__hold{
    display: flex;
    flex-direction: column;
@@ -95,6 +106,11 @@
    margin: 0;
 
    background-color: rgba(11, 44, 190,1);
+ }
+
+ .login__hold{
+   width: 10vw;
+   height: 440vh;
  }
 
  .login__inicio-2{
@@ -217,7 +233,33 @@
    transform: scale(1.2);
  }
 
- 
+ .lineas{
+   background-color: white!important;
+   width: 65vw!important;
+   height: 1vh!important;
+
+   margin-left: 31vw;
+   z-index: 19;
+ }
+
+ .login__inicio iframe{
+   margin-top: 5vh;
+ }
+
+ .titulo_video{
+   font-family:  'Garamond', sans-serif;
+   font-size: 2vw;
+   color: white;
+   margin: 0;
+   margin-left: 73vw;
+   margin-top: -5vh;
+   margin-bottom: 10vh;
+   z-index: 19;
+   width: 25vw;
+
+   background-color: rgba(0,0,0,0);
+ }
+
 
 
 
