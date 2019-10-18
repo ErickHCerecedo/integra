@@ -7,20 +7,61 @@
  * @since 1.0
  */
 
+ require "../sesion/conexion.php";
+
+ conexion($link);
+
  $usuario_correo=$_POST["usuario_correo"];
  $usuario_contrasena=$_POST["usuario_contrasena"];
 
  //	-->	Verificar usuario	<--	//
- $verificar = mysqli_query($link, "SELECT id, nombre FROM usuarios WHERE correo = $usuario_correo AND contrasena = $usuario_contrasena;");
+ $verificar = mysqli_query($link,
+ "SELECT id_usuario, nombre
+ FROM usuarios
+ WHERE correo = '$usuario_correo' AND contrasena = '$usuario_contrasena';")  or die("Error: ".mysqli_error($link));
 
- if($existe = mysql_fetch_array($verificar))
+ $accesoArreglo=array();
+
+ $existe = mysqli_fetch_array($verificar);
+
+ if($existe)
  {
    session_start();
    $_SESSION["acceso"]=1;
-   
-   echo $existe;
+
+   $collection = array(
+     "id"=>$existe[0],
+     "nombre"=>$existe[1],
+   );
+
+   array_push($accesoArreglo,$collection);
+
+   //$accesoArreglo = utf8_converter($accesoArreglo);
+
+   echo json_encode([
+     "response"=>true,
+     "data"=>$accesoArreglo,
+   ]);
+
  }
  else
-   echo 0;
+ {
+   echo json_encode([
+     "response"=>false,
+     "error"=>"Usuario o contaseña incorrectos."
+   ]);
+ }
+
+ function utf8_converter($array)
+ {
+   array_walk_recursive($array, function(&$item, $key){
+     if(!mb_detect_encoding($item, 'utf-8', true)){
+       $item = utf8_encode($item);
+     }
+   });
+   return $array;
+ }
+
+    cerrarConexion($link);
 
 ?>

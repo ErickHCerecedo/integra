@@ -8,7 +8,7 @@
  */
 
  //Servidor
- $server="http://172.30.173.30/";
+ $server="localhost";
  //$server="";
 
  //Usuario

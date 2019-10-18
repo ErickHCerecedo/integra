@@ -23,6 +23,13 @@
 
   while ($item = mysqli_fetch_array($consulta)) {
 
+    $result_arr = array('id_publicacion'=>$item[0], 'usuario'=>$item[1], 'titulo'=>$item[2], 'contenido'=>$item[3], 'aprovacion'=>$item[4], 'visitas'=>$item[5], 'fecha'=>$item[6]);
+
+    array_push($colleccion,$result_arr);
   }
+
+  echo json_encode(["data"=>$colleccion]);
+
+  cerrarConexion($link);
 
 ?>
