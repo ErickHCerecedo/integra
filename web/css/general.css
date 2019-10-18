@@ -12,6 +12,8 @@
  @import "inicio.css";
 
  /* Tipografías */
+ @import url('https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i&display=swap');
+ /* font-family: 'Arimo', sans-serif; */
 
  /*Página*/
 html,body{
@@ -21,6 +23,11 @@ html,body{
     margin: 0;
     padding: 0;
     color: #000000;
+    font-family: Verdana,Geneva,sans-serif;
 }
+
+
+
+
 
  /*Modal*/
