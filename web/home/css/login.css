@@ -71,18 +71,65 @@
    background-color: rgba( 231, 76, 60 ,0);
  }
 
- .login__entrada{
+ .login__entrada-info{
    width: 30vw;
    height: 30vh;
 
-   background-image: url("../img/backgorund.jpg");
+   background-image: url("../../img/informacion.jpg");
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
    cursor: pointer;
+   transition: all 0.3 ease;
 
    background-color: rgba(40, 116, 166, 0.5);
  }
+
+  .login__entrada-emp{
+   width: 30vw;
+   height: 30vh;
+
+   background-image: url("../../img/empleo.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   cursor: pointer;
+   transition: all 0.3 ease;
+
+   background-color: rgba(40, 116, 166, 0.5);
+ }
+
+  .login__entrada-foro{
+   width: 30vw;
+   height: 30vh;
+
+   background-image: url("../../img/foro.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   cursor: pointer;
+   transition: all 0.3 ease;
+
+   background-color: rgba(40, 116, 166, 0.5);
+ }
+
+  .login__entrada-alc{
+   width: 30vw;
+   height: 30vh;
+
+   background-image: url("../../img/alcance.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   cursor: pointer;
+   transition: all 0.3 ease;
+
+   background-color: rgba(40, 116, 166, 0.5);
+ }
+
+ .login__entrada :hover{
+  transform: scale(1.1);
+}
 
  .box_entrada{
    display: flex;

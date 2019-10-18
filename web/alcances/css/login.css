@@ -1,0 +1,156 @@
+/**
+ * @copyright
+ * @author
+ * @version 1.0 (Octubre 2019)
+ * @since 1.0
+ */
+
+ .login__menu{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: fixed;
+
+   width: 90%;
+   height: 10vh;
+   padding: 0 5%;
+
+   background-color: rgba(155, 89, 182,0);
+   z-index: 20;
+ }
+
+ .login__menu img{
+   width: 4vw;
+ }
+
+ .login__direccion{
+   margin-left: 0.5vw;
+ }
+
+ .login__direccion span{
+   font-size: 1.5vw;
+ }
+
+ .login__usuario{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   width: auto;
+   height: 100%;
+
+   background-color: rgba(155, 89, 182,0);
+   cursor: pointer;
+ }
+
+
+
+ .login__cuadricula{
+   display: flex;
+   justify-content: center;
+   align-content: center;
+
+  
+   width: 80%;
+   height: 100vh;
+   padding: 15vh 10%;
+   margin: 0;
+
+   background-color: rgba(155, 89, 182,0.1);
+ }
+
+ .login__entradas{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+
+   width: 100%;
+   height: 70vh;
+   padding: 0;
+   margin: 0;
+
+   background-color: rgb(255, 255, 255);
+ }
+
+ .login__entrada-rat{
+   width: 30vw;
+   height: 30vh;
+
+   background-image: url("../../img/2016.png");
+
+    background-color: rgb(255, 255, 255);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   cursor: pointer;
+   transition: all ease-in-out 0.5;
+ }
+
+ .login__entrada-apli{
+   width: 30vw;
+   height: 30vh;
+
+   background-image: url("../../img/2017.jpg");
+   background-color: rgb(255, 255, 255);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   cursor: pointer;
+   transition: all ease-in-out 0.5;
+ }
+
+.login__entrada :hover{
+  transform: scale(1.5);
+}
+
+ .box_entrada{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   width: 30vw;
+   height: 30vh;
+
+   background-color: rgba(0, 0, 0, 0.5);
+ }
+
+ .titulo_img{
+   color: white;
+   margin: 0;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /**/
