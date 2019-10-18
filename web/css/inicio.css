@@ -37,6 +37,12 @@
     z-index: 1;
 }
 
+.inicio__btnsig{
+  width: 3vw;
+  margin: 2vh 0;
+  cursor: pointer;
+}
+
 #myVideo {
     position: absolute;
     width: 100vw;
