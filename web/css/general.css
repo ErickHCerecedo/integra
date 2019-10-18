@@ -13,7 +13,7 @@
 
  /* Tipografías */
  @import url('https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i&display=swap');
- /* font-family: 'Arimo', sans-serif; */
+
 
  @font-face{
    font-family: "Garamond";
@@ -32,7 +32,15 @@ html,body{
     font-family: Verdana,Geneva,sans-serif;
 }
 
+.titulo{
+    font-family: 'Arimo', sans-serif;
+    font-size: 4vw;
+}
 
+.subtitulo{
+    font-family:  Verdana,Geneva,sans-serif;
+    font-size: 2vw;
+}
 
 
 
