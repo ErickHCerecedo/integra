@@ -83,9 +83,12 @@
     	{
     		$.ajax({
     			type: "POST",
+          headers: { 'Access-Control-Allow-Origin': '*' },
+          crossDomain: true,
+          async: false,
     			url: ruta + "usuario/crea.php",
     			data: {
-                    usuario_nombre: usuario,
+            usuario_nombre: usuario,
     				usuario_correo: correo,
     				usuario_contrasena: contrasena
     			},

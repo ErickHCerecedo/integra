@@ -170,6 +170,13 @@
    background-color: rgba(40, 116, 166, 0.5);
  }
 
+ .login__entrada-1{background-image: url("../img/empleo.jpg");}
+ .login__entrada-2{background-image: url("../img/transporte.jpg");}
+ .login__entrada-3{background-image: url("../img/trabajo.jpg");}
+ .login__entrada-4{background-image: url("../img/denuncia.jpg");}
+ .login__entrada-5{background-image: url("../img/finanzas.jpg");}
+ .login__entrada-6{background-image: url("../img/publico.jpg");}
+
  .login__entrada-arriba{
    margin-bottom: 15vh;
  }

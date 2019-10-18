@@ -63,19 +63,19 @@
 
       <div class="login__entradas">
 
-        <div class="login__entrada" >
+        <div class="login__entrada login__entrada-1" >
           <div class="box_entrada">
             <h1 class="titulo_img">Empleabilidad</h1>
           </div>
         </div>
 
-        <div class="login__entrada login__entrada-arriba" >
+        <div class="login__entrada login__entrada-arriba login__entrada-2" >
           <div class="box_entrada">
             <h1 class="titulo_img">Transporte</h1>
           </div>
         </div>
 
-        <div class="login__entrada" >
+        <div class="login__entrada login__entrada-3" >
           <div class="box_entrada">
             <h1 class="titulo_img">Capacitación Trabajo</h1>
           </div>
@@ -85,19 +85,19 @@
 
       <div class="login__entradas">
 
-        <div class="login__entrada" >
+        <div class="login__entrada login__entrada-4" >
           <div class="box_entrada">
             <h1 class="titulo_img">Denuncias</h1>
           </div>
         </div>
 
-        <div class="login__entrada login__entrada-arriba" >
+        <div class="login__entrada login__entrada-arriba login__entrada-5" >
           <div class="box_entrada">
             <h1 class="titulo_img">Finanzas</h1>
           </div>
         </div>
 
-        <div class="login__entrada" >
+        <div class="login__entrada login__entrada-6" >
           <div class="box_entrada">
             <h1 class="titulo_img">Espacios publicos</h1>
           </div>
