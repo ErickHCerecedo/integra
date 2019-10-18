@@ -57,51 +57,63 @@
       </div>
     </div>
 
-    <!--img class="login__cerrar" src="img/login_cerrar.png" alt=""-->
+    <a href="tread.php?tread=1"> <img class="login__cerrar" src="img/login_cerrar.png" alt=""> </a>
     <!--login cuadricula-->
     <div class="login__cuadricula">
 
       <div class="login__entradas">
 
-        <div class="login__entrada login__entrada-1" >
+        <a href="tread.php?tread=1">
+        <div onclick="" class="login__entrada login__entrada-1" >
           <div class="box_entrada">
             <h1 class="titulo_img">Empleabilidad</h1>
           </div>
         </div>
+        </a>
 
+        <a href="tread.php?tread=2">
         <div class="login__entrada login__entrada-arriba login__entrada-2" >
           <div class="box_entrada">
             <h1 class="titulo_img">Transporte</h1>
           </div>
         </div>
+        </a>
 
+        <a href="tread.php?tread=3">
         <div class="login__entrada login__entrada-3" >
           <div class="box_entrada">
             <h1 class="titulo_img">Capacitación Trabajo</h1>
           </div>
         </div>
+        </a>
 
       </div>
 
       <div class="login__entradas">
 
+        <a href="tread.php?tread=4">
         <div class="login__entrada login__entrada-4" >
           <div class="box_entrada">
             <h1 class="titulo_img">Denuncias</h1>
           </div>
         </div>
+        </a>
 
+        <a href="tread.php?tread=5">
         <div class="login__entrada login__entrada-arriba login__entrada-5" >
           <div class="box_entrada">
             <h1 class="titulo_img">Finanzas</h1>
           </div>
         </div>
+        </a>
 
+        <a href="tread.php?tread=6">
         <div class="login__entrada login__entrada-6" >
           <div class="box_entrada">
             <h1 class="titulo_img">Espacios publicos</h1>
           </div>
         </div>
+        </a>
 
       </div>
 

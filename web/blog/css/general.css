@@ -8,6 +8,7 @@
   /* Importación de otros estilos */
   @import "reset.css";
   @import "login.css";
+  @import "tread.css";
 
   /* Tipografías */
   @font-face{

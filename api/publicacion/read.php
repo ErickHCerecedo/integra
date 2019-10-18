@@ -6,12 +6,24 @@
  * @version 1.0 (Octubre 2019)
  * @since 1.0
  */
+ /*/
+ header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
+header("Allow: GET, POST, OPTIONS, PUT, DELETE");
+$method = $_SERVER['REQUEST_METHOD'];
+if($method == "OPTIONS") {
+    die();
+}
 
+/*/
  require "../sesion/conexion.php";
 
  conexion($link);
 
  $id_bandera=$_POST["id_bandera"];
+
+ echo $id_bandera;
 
  $colleccion=array();
 
@@ -21,7 +33,9 @@
   FROM publicaciones A, relaciones B, tags C
   WERE B.id_tag = $id_bandera AND B.id_publicacion = A.id_publicacion;");
 
-  while ($item = mysqli_fetch_array($consulta)) {
+  $item = mysqli_fetch_array($consulta);
+
+  while ($item) {
 
     $result_arr = array('id_publicacion'=>$item[0], 'usuario'=>$item[1], 'titulo'=>$item[2], 'contenido'=>$item[3], 'aprovacion'=>$item[4], 'visitas'=>$item[5], 'fecha'=>$item[6]);
 

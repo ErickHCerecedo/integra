@@ -69,8 +69,8 @@
   <!--JavaScript-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script type="text/javascript">
-    var ruta = "http://172.30.173.30/index/integra/api/";
-
+    //var ruta = "http://172.30.173.30/index/integra/api/";
+    var ruta = "http://localhost/index/integra/api/";
     function registro()
     {
         var usuario=$("#usuario").val();
@@ -85,7 +85,7 @@
     			type: "POST",
           headers: { 'Access-Control-Allow-Origin': '*' },
           crossDomain: true,
-          async: false,
+          //async: false,
     			url: ruta + "usuario/crea.php",
     			data: {
             usuario_nombre: usuario,
