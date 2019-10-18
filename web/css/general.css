@@ -14,12 +14,25 @@
  /* Tipografías */
  @import url('https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i&display=swap');
 
-
  @font-face{
    font-family: "Garamond";
-   src: url("fonts/Raleway-Bold.ttf");
-   font-weight: bold;
+   src: url("fonts/GaramondPremrPro.otf");
+   font-weight: lighter;
  }
+
+ @font-face{
+   font-family: "Garamond_bold";
+   src: url("fonts/GaramondPremrPro-Smbd.otf");
+   font-weight: normal;
+ }
+
+ @font-face{
+   font-family: "Garamond_italica";
+   src: url("fonts/GaramondPremrPro-It.otf");
+   font-weight: normal;
+ }
+
+
 
  /*Página*/
 html,body{
@@ -33,7 +46,7 @@ html,body{
 }
 
 .titulo{
-    font-family: 'Arimo', sans-serif;
+    font-family: 'Garamond', sans-serif;
     font-size: 4vw;
 }
 
