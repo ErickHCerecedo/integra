@@ -9,37 +9,46 @@
 
  require "../sesion/conexion.php";
 
- $usuario_nombre=$_POST["ususario_nombre"];
- $usuario_correo=$_POST["ususario_correo"];
- $usuario_contrasena=$_POST["ususario_contrasena"];
+ $usuario_nombre=$_POST["usuario_nombre"];
+ $usuario_correo=$_POST["usuario_correo"];
+ $usuario_contrasena=$_POST["usuario_contrasena"];
 
  conexion($link);
 
  //	-->	Verificar usuario exitente	<--	//
  $verificar = mysqli_query($link, "SELECT id_usuario FROM usuarios WHERE correo = $usuario_correo;");
 
- if($existe = mysql_fetch_array($verificar)) //	-->	Si existe usuario, obtener id
+ $existe = mysqli_fetch_array($verificar);
+
+ if($existe) //	-->	Si existe usuario, obtener id
  {
-   $id_usuario=mysqli_insert_id($link);
+   echo json_encode([
+     "response"=>false,
+     "error"=>"Existe usuario."
+   ]);
  }
  else { //	-->	Si no existe usuario, crea nuevo registro en tabla clientes
 
-   $insert_usuario = mysqli_query($link,"INSERT INTO usuarios VALUES(null,'$usuario_nombre','$usuario_correo','$usuario_contrasena',NOW());");
-   if ($insert_usuario)
+   $insert_usuario = mysqli_query($link,"INSERT INTO usuarios VALUES(NULL,'$usuario_nombre','$usuario_correo','$usuario_contrasena', NOW());") or die("Error: ".mysqli_error($link));
+
+   if($insert_usuario===true)
    {
-     $id_usuario=mysqli_insert_id($link);
      mysqli_query($link,"commit;");
-     echo true;
+     echo json_encode([
+       "response"=>true,
+       "data"=>"Usuario registrado correctamente."
+     ]);
    }
    else
    {
      mysqli_query($link,"rollback;");
-     echo false;
+     echo json_encode([
+       "response"=>false,
+       "error"=>"Error al insertar usuario."
+     ]);
    }
 
  }
-
- echo true;
 
  cerrarConexion($link);
 
