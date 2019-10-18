@@ -13,7 +13,7 @@
 
    if(!isset($_SESSION["acceso"]))
    {
-     header("Location: http://172.30.173.30/index/integra/web/blog/index.html");
+     header("Location: index.html");
    }
  }
 
