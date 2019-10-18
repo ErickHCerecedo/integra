@@ -1,0 +1,140 @@
+/**
+ * @copyright
+ * @author
+ * @version 1.0 (Octubre 2019)
+ * @since 1.0
+ */
+
+ .login__menu{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: fixed;
+
+   width: 90%;
+   height: 10vh;
+   padding: 0 5%;
+
+   background-color: rgba(155, 89, 182,0);
+   z-index: 20;
+ }
+
+ .login__menu img{
+   width: 4vw;
+ }
+
+ .login__direccion{
+   margin-left: 0.5vw;
+ }
+
+ .login__direccion span{
+   font-size: 1.5vw;
+ }
+
+ .login__usuario{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   width: auto;
+   height: 100%;
+
+   background-color: rgba(155, 89, 182,0);
+   cursor: pointer;
+ }
+
+ .login__cuadricula{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: centro;
+   position: fixed;
+
+   width: 80%;
+   height: 100vh;
+   padding: 15vh 10%;
+   margin: 0;
+
+   background-color: rgba(155, 89, 182,0.1);
+ }
+
+ .login__entradas{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+
+   width: 100%;
+   height: auto;
+   padding: 0;
+   margin: 0;
+
+   background-color: rgba( 231, 76, 60 ,0);
+ }
+
+ .login__entrada{
+   width: 20vw;
+   height: 20vh;
+
+   background-image: url("../img/backgorund.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   cursor: pointer;
+
+   background-color: rgba(40, 116, 166, 0.5);
+ }
+
+ .login__entrada-arriba{
+   margin-bottom: 15vh;
+ }
+
+ .box_entrada{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   width: 20vw;
+   height: 20vh;
+
+   background-color: rgba(0, 0, 0, 0.5);
+ }
+
+ .titulo_img{
+   color: white;
+   margin: 0;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /**/
