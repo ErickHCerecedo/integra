@@ -23,15 +23,18 @@
 
     <!--Favicons-->
 
+    <!--JS-->
+    <script type="text/javascript" src="js/funciones.js"></script>
 
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="css/general.css">
+    
 
   </head>
   <body>
   <!-- The video -->
   <video autoplay muted loop id="myVideo">
-    <source src="img/video.mp4" type="video/mp4">
+    <source src="img/Home.mp4" type="video/mp4">
   </video>
     <!-- Menu -->
   	<div class="menu">
@@ -49,18 +52,45 @@
     </div>
 
   <!--Contenido-->
+  <!--Inicio1-->
   <div class="contenido">
     <div class="contenedor">
-      <p class="titulo">Misión</p>
-      <p class="subtitulo">
-        Facilitar la interacción tecnológica para personas
-        con discapacidad visual o motriz; con el fin de facilitar
-        la busqueda de un empelo.
-      </p>
+      <!--1-->
+      <div id="1">
+        <p class="titulo">Misión</p>
+        <p class="subtitulo">
+          Facilitar la interacción tecnológica para personas
+          con discapacidad visual o motriz; con el fin de facilitar
+          la busqueda de un empelo.
+        </p>
+      </div>
+      <!--2-->
+      <div id="2" style="display:none;">
+        <p class="titulo">Visión</p>
+        <p class="subtitulo">
+          Tener un ayutamiento con más igualdad y participación ciudadana;
+          que toda persona cuenta con un trabajo digno.
+        </p>
+      </div>
+      <!--3-->
+      <div id="3" style="display:none;">
+        <p class="titulo">¿Qué es Integra?</p>
+        <p class="subtitulo">
+          Plataforma que ayuda a generar un diálogo entre los usuarios para poder
+          generar propuestas que mejoren la calidad de vida de las personas con discapacidad.
+        </p>
+      </div>
+      <!--4-->
+      <div id="4" style="display:none;">
+        <p class="titulo">Contacto</p>
+        <p class="subtitulo">
+          Facebook: Fundación Integra
+          Correo: fintegra.2019@gmail.com
+        </p>
+      </div>
     </div>
     <div class="contenedor_btn">
-      holka
-      <img class="inicio__btnsig" onclick="seccion(2)" src="img/inicio_flecha.png" alt="inicio_flecha"> 
+      <img class="inicio__btnsig" id="btnClick" src="img/inicio_flecha.png" alt="inicio_flecha"> 
     </div>
   </div>
 
@@ -80,7 +110,20 @@
   </div>
 
   <!--JavaScript-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>
+  $('#btnClick').on('click',function(){
+    if($('#1').css('display')!='none'){
+    $('#2').show().siblings('div').hide();
+    }else if($('#2').css('display')!='none'){
+        $('#3').show().siblings('div').hide();
+    }else if($('#3').css('display')!='none'){
+        $('#4').show().siblings('div').hide();
+    }else if($('#4').css('display')!='none'){
+        $('#1').show().siblings('div').hide();
+    }
+});
+  </script>
 
-  </body>
+</body>
 </html>

@@ -1,0 +1,92 @@
+.contenido_registro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 80%;
+    background-color: transparent;
+    padding-top: 10vh;
+    z-index: 14;
+}
+
+.contenedor_registro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 60vw;
+    height: 60vh;
+
+    background-color: rgb(255, 112, 98);
+
+    z-index: 1;
+}
+
+.registro__input{
+    height: 5vh;
+    width: 15vw;
+    border-radius: .1vw;
+    border: none;
+    background-color: #444;
+    opacity: .6;
+    outline: none;
+    font-size: .9vw;
+    letter-spacing: .08vw;
+    color: #fff;
+    padding-left: 1vw;
+}
+
+.registro__isesion-btn{
+    height: 5vh;
+    width: 16vw;
+    font-size: .7vw;
+    letter-spacing: 2px;
+    background: #fff;
+    border: none;
+    border-radius: 2px;
+    color: #696a86;
+    cursor: pointer;
+}
+
+.registro__ccuenta-btn{
+    height: 5vh;
+    width: 16vw;
+    font-size: .7vw;
+    letter-spacing: 2px;
+    background: #fff;
+    border: none;
+    border-radius: 2px;
+    color: #696a86;
+    cursor: pointer;
+}
+
+.registro__isesion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 25vh;
+}
+
+.registro__ccuenta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 25vh;
+}
+
+.registro__isesion-form{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.registro__ccuenta-form{
+    display: flex;
+    flex-direction: column;
+}
