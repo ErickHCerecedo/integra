@@ -1,0 +1,28 @@
+.container{
+    display: inline-block;
+    cursor: pointer;
+    z-index: 1;
+    margin: 10vh 0 0 -86vw;
+}
+
+.bar1, .bar2, .bar3{
+    width: 55px;
+    height: 5px;
+    background-color: #fff;
+    margin: 12px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-15px, 19px);
+  transform: rotate(-45deg) translate(-15px, 19px);
+  background-color: #000;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -8px);
+  transform: rotate(45deg) translate(-5px, -8px);
+  background-color: #000;
+}

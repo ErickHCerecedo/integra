@@ -74,3 +74,9 @@ function login()
 		});
 	}
 }
+
+function myFunction(x) {
+  x.classList.toggle("change");
+  window.location=("home/index.html");
+
+}
