@@ -48,7 +48,7 @@ html,body{
 }
 
 .titulo{
-    font-family: 'Garamond', sans-serif;
+    font-family: 'Garamond';
     font-size: 6vw;
     margin-bottom: 1vh;
     text-shadow: 0 0 10px rgb(0, 0, 0);

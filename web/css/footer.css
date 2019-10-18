@@ -1,7 +1,7 @@
 /**
- * @copyright 
+ * @copyright
  * @author
- * @version 1.0 
+ * @version 1.0
  * @since 1.0
  */
 
@@ -20,7 +20,11 @@
 
     align-items: center;
     justify-content: space-around;
-    
+
     list-style-type: none;
     letter-spacing: 0.1vw;;
+ }
+
+ .footer_lista a{
+   color: white;
  }

@@ -47,19 +47,20 @@
     <!--contenido-->
     <div class="login__contenido">
 
-      <div class="login__inicio">
-        <p class="subtitulo">Iniciar Sesión</p>
-        <input id="icorreo" class="input" type="text" placeholder="Correo">
-        <input id="icontrasena" class="input" type="password" placeholder="Constraseña">
-        <input onclick="login()" type="button" class="boton" value="Entrar">
-
-        <a href="registro.html">Registrate</a>
-      </div>
-      <div class="login__registro">
+      <div class="login__inicio login__inicio-2">
 
       </div>
-      <div class="login__hold">
+      <div class="login__registro login__registro-2">
 
+      </div>
+      <div class="login__hold login__hold-2">
+        <p class="subtitulo">Registro de usuario</p>
+        <input id="usuario" class="input" type="text" placeholder="Usuario">
+        <input id="correo" class="input" type="text" placeholder="Correo">
+        <input id="contrasena" class="input" type="password" placeholder="Constraseña">
+        <input onclick="registro()" type="button" class="boton" value="Guardar">
+
+        <a href="index.html">¿Ya estas registrado?</a>
       </div>
 
 
@@ -68,48 +69,48 @@
   <!--JavaScript-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script type="text/javascript">
+    var ruta = "http://172.30.173.30/index/integra/api/";
 
-    // var ruta = "http://172.30.173.30/index/integra/api/";
-     var ruta = "http://localhost/index/integra/api/";
-
-    function login()
+    function registro()
     {
-      var correo=$("#icorreo").val();
-      var contrasena=$("#icontrasena").val();
+        var usuario=$("#usuario").val();
+        var correo=$("#correo").val();
+        var contrasena=$("#contrasena").val();
 
-      if(correo=='' || contrasena=='')
-        $("#alerta").html('Ingrese todos los datos');
-      else
-      {
-        $.ajax({
-          type: "POST",
-          url: ruta + "sesion/login.php",
-          data: {
-            usuario_correo: correo,
-            usuario_contrasena: contrasena
-          },
-          success: function(response)
-          {
-            var response = JSON.parse(response);
+        if(correo=='' && contrasena=='' && usuario=='')
+    		$("#alerta").html('Ingrese todos los datos');
+    	else
+    	{
+    		$.ajax({
+    			type: "POST",
+    			url: ruta + "usuario/crea.php",
+    			data: {
+                    usuario_nombre: usuario,
+    				usuario_correo: correo,
+    				usuario_contrasena: contrasena
+    			},
+    			success: function(response)
+    			{
+    				if(response==1)
+    				{
+    					window.location="general.php";
+    					//alert("Funciona");
+    				}
+    				else
+    				{
+    					$("#alerta").text("Correo o contraseña incorrecto");
+    				}
+    			},
+    			error: function()
+    			{
+    				$("#alerta").text("No se pudo conectar con el servidor");
+    			}
+    		});
+    	}
 
-            if(response.response == true)
-            {
-              window.location="foro.php";
-            }
-            else
-            {
-              //$("#alerta").text("Correo o contraseña incorrecto");
-              alert("Correo o contraseña incorrecto");
-            }
-          },
-          error: function()
-          {
-            //$("#alerta").text("No se pudo conectar con el servidor");
-            alert("No se pudo conectar con el servidor");
-          }
-        });
-      }
     }
+
+
   </script>
 </body>
 </html>

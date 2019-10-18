@@ -43,6 +43,92 @@
    cursor: pointer;
  }
 
+ .login__contenido{
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+
+   width: 80%;
+   height: 70vh;
+   padding: 15vh 10vw;
+   margin: 0;
+
+   background-color: rgba(155, 89, 182,0);
+ }
+
+ .login__inicio{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+   width: 60%;
+   height: 100%;
+   padding: 0;
+   margin: 0;
+
+   background-color: rgba(229, 248, 255,1);
+ }
+
+ .login__registro{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   width: 30%;
+   height: 100%;
+   padding: 0;
+   margin: 0;
+
+   background-color: rgba(0, 105, 225,1);
+ }
+
+ .login__hold{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+   width: 10%;
+   height: 100%;
+   padding: 0;
+   margin: 0;
+
+   background-color: rgba(11, 44, 190,1);
+ }
+
+ .login__inicio-2{
+   width: 10%;
+ }
+
+ .login__registro-2{
+   width: 30%;
+ }
+
+ .login__hold-2{
+   width: 60%;
+   color: white;
+ }
+
+ .login__hold-2 input{
+   color: white;
+   border-bottom: 2px solid white;
+ }
+
+ .login__hold-2 a{
+   color: white!important;
+ }
+
+
+
+
+
+
+
+
+
+
+
  .login__cuadricula{
    display: flex;
    flex-direction: column;
